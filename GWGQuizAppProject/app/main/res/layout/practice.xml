@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_second"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.example.android.gwgquizproject.PracticeActivity">
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+    <TextView
+        android:id="@+id/answerA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+    <TextView
+        android:id="@+id/answerB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+    <TextView
+        android:id="@+id/answerC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+    <TextView
+        android:id="@+id/answerD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+    <TextView
+        android:id="@+id/answerE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+    <Button
+        android:id="@+id/bt_launch_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next Question"
+        style="@style/Widget.AppCompat.Button.Colored"/>
+    <Button
+        android:id="@+id/bt_go_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="End Quiz"
+        style="@style/Widget.AppCompat.Button.Colored"/>
+</LinearLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.example.android.gwgquizproject.MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quiz Instruction and Level Selection"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@android:color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:text="1. Start with Practice (Revision) mode."/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:text="2. Intermediate level can use 50-50 option."/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginTop="6dp"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:text="3. Expert mode is timed and without help."/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginTop="6dp"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:text="4. Fun facts  ... are random trivia about the presidents."/>            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/black"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:text="Difficulty Level"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/black"
+                    android:text="Additional Options"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@android:color/black"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RadioGroup
+                    android:id="@+id/radioQuizLevel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <RadioButton
+                        android:id="@+id/radioPractise"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/radio_practice"
+                        android:checked="true" />
+                    <RadioButton
+                        android:id="@+id/radioBeginner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/radio_beginner"/>
+                    <RadioButton
+                        android:id="@+id/radioIntermediate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/radio_intermediate" />
+                    <RadioButton
+                        android:id="@+id/radioAdvanced"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/radio_advanced" />
+                </RadioGroup>
+            </LinearLayout>
+              <LinearLayout
+                  android:layout_width="0dp"
+                  android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <CheckBox
+                    android:id="@+id/chk50-50"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="50-50 option"
+                    />
+
+                <CheckBox
+                    android:id="@+id/chkThrowFacts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Throw Fun Facts" />
+            </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <Button
+                android:id="@+id/bt_launch_activity"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Launch Quiz"
+                android:layout_gravity="center"
+                style="@style/Widget.AppCompat.Button.Colored"/>
+            <Button
+                android:id="@+id/exitQuiz"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Exit Quiz"
+                android:layout_gravity="center"
+                style="@style/Widget.AppCompat.Button.Colored"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

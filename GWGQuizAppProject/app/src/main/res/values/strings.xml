@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">GWG Quiz Project: US Presidents</string>
+    <string name="activity1_name">Learn Page</string>
+    <string name="activity2_name">Practice Page</string>
+    <string name="activity3_name">Quiz Page</string>
+    <string name="easy">Beginner</string>
+    <string name="medium">Intermediate</string>
+    <string name="hard">Expert</string>
+    <string name="allowThreeTries">Three tries mode</string>
+    <string name="showAnswer">Highlight Answer</string>
+    <string name="showProgress">Live Score</string>
+    <string name="radio_practice">Study Mode</string>
+    <string name="radio_beginner">Practice Mode</string>
+    <string name="radio_advanced">Quiz Mode</string>
+</resources>
